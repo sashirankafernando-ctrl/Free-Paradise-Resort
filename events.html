@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Events & Day-Out Packages at Free Paradise Resort. Unforgettable weddings, corporate events, and day outs.">
+    <title>Events & Packages | Free Paradise Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand"><i class="fa-solid fa-leaf"></i> Free Paradise
+                <span>Resort</span></a>
+            <div class="mobile-toggle"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="leisure.html">Leisure</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 400px;">
+            <div class="hero-overlay"></div>
+            <img src="images/resort_event_1772318833637.png" alt="Events & Weddings" class="hero-bg">
+            <div class="hero-content" style="padding-top: 5rem;">
+                <h1>Events & Day-Outs</h1>
+                <p>Host unforgettable weddings, birthdays, or corporate escapes in our tropical sanctuary.</p>
+            </div>
+        </section>
+
+        <!-- Events Details -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Celebrate with Us</span>
+                    <h2 class="section-title">Packages & Offerings</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="images/resort_event_1772318833637.png" alt="Weddings" class="card-img"
+                            style="height:250px; object-fit:cover;">
+                        <div class="card-body">
+                            <h3 class="card-title">Weddings & Banquets</h3>
+                            <p class="card-text">Elegant outdoor gardens and sophisticated indoor venues. Includes
+                                bespoke catering with our signature fresh ingredients.</p>
+                            <ul style="list-style:none; padding-bottom: 1rem;">
+                                <li><i class="fa-solid fa-check text-gold"></i> Custom Menus</li>
+                                <li><i class="fa-solid fa-check text-gold"></i> Photography Spots</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/resort_hero_1772318729891.png" alt="Day-Out Packages" class="card-img"
+                            style="height:250px; object-fit:cover;">
+                        <div class="card-body">
+                            <h3 class="card-title">Day-Out Packages</h3>
+                            <p class="card-text">Ideal for corporate retreats or family bonding. Spend the day enjoying
+                                our facilities.</p>
+                            <ul style="list-style:none; padding-bottom: 1rem;">
+                                <li><i class="fa-solid fa-clock text-gold"></i> 9 AM – 5 PM</li>
+                                <li><i class="fa-solid fa-plus text-gold"></i> Add-ons: BBQ, Games</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/resort_dining_1772318759303.png" alt="Private Parties" class="card-img"
+                            style="height:250px; object-fit:cover;">
+                        <div class="card-body">
+                            <h3 class="card-title">Birthdays & Private Parties</h3>
+                            <p class="card-text">Cozy atmosphere for intimate gatherings or large celebrations with
+                                customized themes.</p>
+                            <ul style="list-style:none; padding-bottom: 1rem;">
+                                <li><i class="fa-solid fa-cake-candles text-gold"></i> Event Planning</li>
+                                <li><i class="fa-solid fa-music text-gold"></i> Sound System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Request a Quote -->
+        <section class="section section-alt">
+            <div class="container" style="max-width: 600px;">
+                <div class="section-header">
+                    <h2 class="section-title">Request a Quote</h2>
+                    <p>Have an event in mind? Let us know your requirements and we'll craft the perfect package for you.
+                    </p>
+                </div>
+
+                <form id="quoteForm"
+                    style="background:var(--color-white); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Event Type</label>
+                        <select class="form-control" required>
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="dayout">Day-Out Package</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="party">Birthday / Private Party</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Estimated Guests</label>
+                        <input type="number" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Additional Requirements (BBQ, Photography, etc.)</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Get Your Quote</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Free Paradise Resort. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <a href="[ADD_WHATSAPP]" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('quoteForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Quote request sent successfully! Our team will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

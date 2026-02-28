@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Free Paradise Resort in Minuwangoda, Sri Lanka. Reach out for bookings, inquiries, and directions to your tropical getaway.">
+    <title>Contact Us | Free Paradise Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand"><i class="fa-solid fa-leaf"></i> Free Paradise
+                <span>Resort</span></a>
+            <div class="mobile-toggle"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="leisure.html">Leisure</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section"
+            style="padding-top: 8rem; margin-top: var(--nav-height); min-height: calc(100vh - var(--nav-height) - 150px);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Contact & Location</h2>
+                </div>
+
+                <div class="split-section" style="align-items: flex-start;">
+                    <!-- Contact Details -->
+                    <div class="split-content">
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--color-primary-green); margin-bottom: 1rem;">Free Paradise Resort
+                            </h3>
+                            <p><strong><i class="fa-solid fa-location-dot"
+                                        style="color: var(--color-accent-gold); width: 25px;"></i> Address:</strong>
+                                551/A, Hurigahamula, Horampella, Minuwangoda 11550, Sri Lanka</p>
+                            <p><strong><i class="fa-solid fa-phone"
+                                        style="color: var(--color-accent-gold); width: 25px;"></i> Phone:</strong> 0112
+                                297 149 / 076 634 5617</p>
+                            <p><strong><i class="fa-brands fa-whatsapp"
+                                        style="color: var(--color-accent-gold); width: 25px;"></i> WhatsApp:</strong>
+                                [ADD_WHATSAPP]</p>
+                            <p><strong><i class="fa-solid fa-envelope"
+                                        style="color: var(--color-accent-gold); width: 25px;"></i> Email:</strong>
+                                [ADD_EMAIL]</p>
+                            <p><strong><i class="fa-solid fa-clock"
+                                        style="color: var(--color-accent-gold); width: 25px;"></i> Operating
+                                    Hours:</strong> 6 AM – 10 PM daily</p>
+                        </div>
+
+                        <div
+                            style="background: var(--color-white); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+                            <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Package / Room (Optional)</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Map Map -->
+                    <div class="split-image" style="height: 100%; min-height: 500px; display: flex;">
+                        <iframe src="[ADD_MAP_LINK]" width="100%" height="100%"
+                            style="border:0; border-radius: var(--border-radius-lg); min-height: 500px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Free Paradise Resort. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <a href="[ADD_WHATSAPP]" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Your message has been sent successfully. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
